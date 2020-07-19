@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VNym1ekjqNCnqKLZOVQIm2+26CoY9x9Xba7m+LLdGFDCLlAY1yK6xxmyAVo2wjZpn+I91HhpAaNEkkOyqB3lyA==",
+  "dgSpecHash": "QLD62NHzeDylLLMnu2ryobOXjBp5BnBP3TUJ7BN9ZRTz9WKW+Sc/94zVMLapGGxKoYAkGorAFh+WG8d/NXqxUA==",
   "success": true,
   "projectFilePath": "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/goli/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0-preview.6.20305.6/microsoft.extensions.configuration.abstractions.5.0.0-preview.6.20305.6.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.extensions.primitives/5.0.0-preview.6.20305.6/microsoft.extensions.primitives.5.0.0-preview.6.20305.6.nupkg.sha512",
+    "/home/goli/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0-preview.6.20305.6/system.runtime.compilerservices.unsafe.5.0.0-preview.6.20305.6.nupkg.sha512"
+  ],
   "logs": []
 }
