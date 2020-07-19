@@ -4,6 +4,70 @@
     "/home/goli/Desktop/git/Sqlite_Project/Project/Project.csproj": {}
   },
   "projects": {
+    "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj",
+        "projectName": "Project.Model",
+        "projectPath": "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj",
+        "packagesPath": "/home/goli/.nuget/packages/",
+        "outputPath": "/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/goli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20305.6, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/goli/Desktop/git/Sqlite_Project/Project/Project.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -24,7 +88,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj": {
+                "projectPath": "/home/goli/Desktop/git/Sqlite_Project/Project.Model/Project.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

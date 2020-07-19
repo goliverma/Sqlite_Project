@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "C0WcjsHLXinkkx+osr/NgnRMwb6/JxUuokI0lxZY94uy/JI0VP7XqzmKrVPbg+3MSPA1g7HLP2trrnpoAVRLsA==",
+  "dgSpecHash": "a6hUl2F/3jkpws/mfwt1kszVhufrYRPTY6qucvPCqVp/2iiXi3L6qHZ/FQuv85MM0efok9j1ZTOLg4JJW8aTAg==",
   "success": true,
   "projectFilePath": "/home/goli/Desktop/git/Sqlite_Project/Project/Project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/goli/.nuget/packages/dapper/2.0.35/dapper.2.0.35.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0-preview.6.20305.6/microsoft.extensions.configuration.abstractions.5.0.0-preview.6.20305.6.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.extensions.primitives/5.0.0-preview.6.20305.6/microsoft.extensions.primitives.5.0.0-preview.6.20305.6.nupkg.sha512",
+    "/home/goli/.nuget/packages/system.data.sqlite.core/1.0.113.1/system.data.sqlite.core.1.0.113.1.nupkg.sha512",
+    "/home/goli/.nuget/packages/system.reflection.emit.lightweight/4.7.0/system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "/home/goli/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0-preview.6.20305.6/system.runtime.compilerservices.unsafe.5.0.0-preview.6.20305.6.nupkg.sha512"
+  ],
   "logs": []
 }

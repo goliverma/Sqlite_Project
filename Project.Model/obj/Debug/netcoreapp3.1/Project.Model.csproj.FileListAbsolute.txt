@@ -1,0 +1,9 @@
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/bin/Debug/netcoreapp3.1/Project.Model.deps.json
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/bin/Debug/netcoreapp3.1/Project.Model.dll
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/bin/Debug/netcoreapp3.1/Project.Model.pdb
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.csprojAssemblyReference.cache
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.AssemblyInfoInputs.cache
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.AssemblyInfo.cs
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.csproj.CoreCompileInputs.cache
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.dll
+/home/goli/Desktop/git/Sqlite_Project/Project.Model/obj/Debug/netcoreapp3.1/Project.Model.pdb
