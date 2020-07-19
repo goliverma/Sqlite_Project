@@ -26,8 +26,15 @@ using Project.Model.Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/home/goli/Desktop/git/Sqlite_Project/Project/Views/_ViewImports.cshtml"
+using Project.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5314356fbe9d4c68194b31c5a83aefff3cc166cf", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e5d3859f90d12e39cc70a4710b1bb946c2bdf3a5", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0863de391bd04af2fd7f5bae8fd117c5cbc5b6f3", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Employee>>
     {
         #pragma warning disable 1998
