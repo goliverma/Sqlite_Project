@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Project.Model.Repository.Interface;
+using Project.ViewModel;
+using Project.Model.Data;
 
 namespace Project.Controllers
 {
@@ -22,6 +24,22 @@ namespace Project.Controllers
         {
             var data = await context.GetAllEmployee();
             return View(data);
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(ViewEmployee employee)
+        {
+            var Employee = new Employee{
+                Name = employee.Name,
+                Email = employee.Email,
+                Address = employee.Address
+            };
+            await context.Insert(Employee);
+            return RedirectToAction("Index");
         }
     }
 }
