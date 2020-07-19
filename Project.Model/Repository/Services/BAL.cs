@@ -14,12 +14,14 @@ namespace Project.Model.Repository.Services
         }
         public Task<IEnumerable<Employee>> GetAllEmployee()
         {
-            throw new System.NotImplementedException();
+            string query = "select * from employee";
+            return data.LoadData<Employee, dynamic>(query, new {});
         }
 
         public Task Insert(Employee employee)
         {
-            throw new System.NotImplementedException();
+            string query = @"insert into employee (Name, Email, Address) values (@Name, @Email, @Address))";
+            return data.SaveData<Employee>(query, employee);
         }
     }
 }
