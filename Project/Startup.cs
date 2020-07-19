@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Project.Model.Repository.Interface;
+using Project.Model.Repository.Services;
 
 namespace Project
 {
@@ -23,6 +25,8 @@ namespace Project
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IDAL, DAL>();
+            services.AddTransient<IBAL, BAL>();
             services.AddControllersWithViews();
         }
 
