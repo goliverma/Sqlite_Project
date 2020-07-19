@@ -1,5 +1,8 @@
+using System.Linq;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Threading.Tasks;
+using Dapper;
 using Microsoft.Extensions.Configuration;
 using Project.Model.Repository.Interface;
 
@@ -14,14 +17,23 @@ namespace Project.Model.Repository.Services
         {
             this.config = config;
         }
-        public Task<IEnumerable<T>> LoadData<T, U>(string query, U parameter)
+        public async Task<IEnumerable<T>> LoadData<T, U>(string query, U parameter)
         {
-            throw new System.NotImplementedException();
+            string connectionstring = config.GetConnectionString(ConnectionStringName);
+            using (var connection = new SQLiteConnection(connectionstring))
+            {
+                var data = await connection.QueryAsync<T>(query, parameter);
+                return data.ToList();
+            } 
         }
 
-        public Task SaveData<T>(string query, T parameter)
+        public async Task SaveData<T>(string query, T parameter)
         {
-            throw new System.NotImplementedException();
+            string connectionstring = config.GetConnectionString(ConnectionStringName);
+            using (var connection = new SQLiteConnection(connectionstring))
+            {
+                await connection.ExecuteAsync(query, parameter);
+            } 
         }
     }
 }

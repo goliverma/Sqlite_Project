@@ -36,9 +36,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[5.0.0-preview.6.20305.6, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.1, )"
             }
           },
           "imports": [
