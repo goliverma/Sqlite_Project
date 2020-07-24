@@ -10,6 +10,7 @@
         <th>Name</th>
         <th>Email</th>
         <th>Address</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,11 @@
               <td>@item.Name</td>
               <td>@item.Email</td>
               <td>@item.Address</td>
+              <td>
+                <a asp-controller="Home" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                <a asp-controller="Home" asp-action="Employee" asp-route-id="@item.Id" class="btn btn-primary">View</a>
+                <a asp-controller="Home" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+              </td>
           </tr>
       }
     </tbody>

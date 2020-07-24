@@ -20554,6 +20554,11 @@
       "FilePath": "/home/goli/Desktop/git/Sqlite_Project/Project/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/goli/Desktop/git/Sqlite_Project/Project/Views/Home/Employee.cshtml",
+      "TargetPath": "Views\\Home\\Employee.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

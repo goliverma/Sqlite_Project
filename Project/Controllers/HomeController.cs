@@ -59,5 +59,16 @@ namespace Project.Controllers
             await context.UpdateEmployee(data);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> Employee(int id)
+        {
+            var data = await context.GetById(id);
+            return View(data);
+        }
+        public async Task<IActionResult> Delete(int id)
+        {
+            await context.DeleteEmployee(id);
+            return RedirectToAction("Index");
+        }
     }
 }

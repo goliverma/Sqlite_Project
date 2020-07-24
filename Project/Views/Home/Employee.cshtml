@@ -1,0 +1,12 @@
+@model Employee
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="card border-primary mb-3" style="max-width: 18rem;" >
+  <div class="card-header">@Model.Name</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">@Model.Email</h5>
+    <p class="card-text">@Model.Address</p>
+  </div>
+</div>

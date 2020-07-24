@@ -10,5 +10,6 @@ namespace Project.Model.Repository.Interface
         Task<Employee> GetById(int id);
         Task Insert(Employee employee);
         Task<Employee> UpdateEmployee(Employee changeemployee);
+        Task DeleteEmployee(int id);
     }
 }

@@ -50,3 +50,4 @@
 /home/goli/Desktop/git/Sqlite_Project/Project/obj/Debug/netcoreapp3.1/Project.genruntimeconfig.cache
 /home/goli/Desktop/git/Sqlite_Project/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/Create.cshtml.g.cs
 /home/goli/Desktop/git/Sqlite_Project/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/Update.cshtml.g.cs
+/home/goli/Desktop/git/Sqlite_Project/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/Employee.cshtml.g.cs

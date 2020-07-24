@@ -30,11 +30,18 @@ namespace Project.Model.Repository.Services
             string query = $"update employee set Name = @Name, Email = @Email, Address = @Address where Id=@Id";
             return await data.LoadSingleData<Employee, dynamic>(query, changeemployee);
         }
-
+        public async Task DeleteEmployee(int id)
+        {
+            string query = @"delete from employee where Id = @id";
+            await data.LoadSingleData<Employee, dynamic>(query, new {Id = id});
+        }
         public async Task<Employee> GetById(int id)
         {
             string query = @"select * from employee where Id = @id";
-            return await data.LoadSingleData<Employee, dynamic>(query, new {Id = id});
+            await Task.Run(()=>{
+                data.LoadSingleData<Employee, dynamic>(query, new {Id = id});
+            });
+            return null;
         }
     }
 }
