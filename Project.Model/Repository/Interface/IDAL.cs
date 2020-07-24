@@ -6,5 +6,6 @@ namespace Project.Model.Repository.Interface
     {
         Task<IEnumerable<T>> LoadData<T, U>(string query, U parameter);
         Task SaveData<T>(string query, T parameter);
+        Task<T> LoadSingleData<T, U>(string query, U parameter);
     }
 }

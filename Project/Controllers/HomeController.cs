@@ -41,5 +41,22 @@ namespace Project.Controllers
             await context.Insert(Employee);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var data = await context.GetById(id);
+            return View(data);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(ViewEmployee changeemployee)
+        {
+            var data = new Employee{
+                Name = changeemployee.Name,
+                Email = changeemployee.Email,
+                Address = changeemployee.Address
+            };
+            await context.Insert(data);
+            return RedirectToAction("Index");
+        }
     }
 }

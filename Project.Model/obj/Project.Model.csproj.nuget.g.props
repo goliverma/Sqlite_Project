@@ -12,4 +12,7 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgnetfx-System_Collections_Generic_IEnumerable_EmptyIfNull Condition=" '$(Pkgnetfx-System_Collections_Generic_IEnumerable_EmptyIfNull)' == '' ">/home/goli/.nuget/packages/netfx-system.collections.generic.ienumerable.emptyifnull/1.1.0</Pkgnetfx-System_Collections_Generic_IEnumerable_EmptyIfNull>
+  </PropertyGroup>
 </Project>

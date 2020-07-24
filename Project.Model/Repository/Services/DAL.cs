@@ -26,13 +26,22 @@ namespace Project.Model.Repository.Services
                 return data.ToList();
             } 
         }
-
         public async Task SaveData<T>(string query, T parameter)
         {
             string connectionstring = config.GetConnectionString(ConnectionStringName);
             using (var connection = new SQLiteConnection(connectionstring))
             {
                 await connection.ExecuteAsync(query, parameter);
+            } 
+        }
+
+        public async Task<T> LoadSingleData<T, U>(string query, U parameter)
+        {
+            string connectionstring = config.GetConnectionString(ConnectionStringName);
+            using (var connection = new SQLiteConnection(connectionstring))
+            {
+                var data = await connection.QueryAsync<T>(query, parameter);
+                return data.FirstOrDefault();
             } 
         }
     }

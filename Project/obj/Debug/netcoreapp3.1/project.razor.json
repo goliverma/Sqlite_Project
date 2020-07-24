@@ -20521,6 +20521,11 @@
   "RootNamespace": "Project",
   "Documents": [
     {
+      "FilePath": "/home/goli/Desktop/git/Sqlite_Project/Project/Views/Home/Update.cshtml",
+      "TargetPath": "Views\\Home\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/goli/Desktop/git/Sqlite_Project/Project/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
