@@ -5,6 +5,7 @@
 
 <div>
     <form asp-controller="Home" asp-action="Update" method="POST">
+        <input asp-for="@Model.Id" hidden>
         <div class="form-group row">
             <label asp-for="Name" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">

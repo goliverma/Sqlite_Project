@@ -51,11 +51,12 @@ namespace Project.Controllers
         public async Task<IActionResult> Update(ViewEmployee changeemployee)
         {
             var data = new Employee{
+                Id = changeemployee.Id,
                 Name = changeemployee.Name,
                 Email = changeemployee.Email,
                 Address = changeemployee.Address
             };
-            await context.Insert(data);
+            await context.UpdateEmployee(data);
             return RedirectToAction("Index");
         }
     }

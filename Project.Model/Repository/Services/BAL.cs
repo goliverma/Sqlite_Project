@@ -28,7 +28,7 @@ namespace Project.Model.Repository.Services
         public async Task<Employee> UpdateEmployee(Employee changeemployee)
         {
             string query = $"update employee set Name = @Name, Email = @Email, Address = @Address where Id=@Id";
-            return await data.LoadSingleData<Employee, dynamic>(query, new {changeemployee});
+            return await data.LoadSingleData<Employee, dynamic>(query, changeemployee);
         }
 
         public async Task<Employee> GetById(int id)
